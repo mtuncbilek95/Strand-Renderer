@@ -27,4 +27,4 @@ would like to see the game engine to evaluate my work quality and working princi
 or Discord. I can set a date for the live meeting and show you the details of the architecture I have
 created by sharing the screen. All rights of Strand Engine are reserved by Metehan Tuncbilek.
 
-Thank you for your understandings.
+Thank you for your understanding.
