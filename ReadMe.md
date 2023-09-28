@@ -17,3 +17,9 @@ only 1 Framebuffer and 1 Render Pass. It also does not support instancing.
 - Path Tracing in Compute Shader
 - Intel Sponza Scene
 - Basic Imgui Interface to control the properties
+
+## FOR THOSE WHO CAN NOT SEE STRAND ENGINE REPOSITORY
+
+Since Strand Engine will be my future fully functioned game engine, I decided to make it private. If you would 
+like to see the game engine to evaluate my work quality and working principles, please contact me via email 
+or Discord. All rights of the game engine are reserved by me.
