@@ -8,9 +8,8 @@
 #include <Shader/Shader.hpp>
 #include <CommandList/CommandList.hpp>
 
-GraphicsDevice::GraphicsDevice(Window* window)
+GraphicsDevice::GraphicsDevice()
 {
-    Window_ = window;
 }
 
 GraphicsDevice::~GraphicsDevice()

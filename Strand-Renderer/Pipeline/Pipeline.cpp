@@ -37,3 +37,14 @@ Pipeline::Pipeline(GraphicsDevice* device, PipelineDesc& desc)
 
     SamplerState_ = Desc_.SamplerState->GetSamplerState();
 }
+
+std::vector<Shader*> Pipeline::GetShader(ShaderType type)
+{
+    std::vector<Shader*> shaders;
+
+    for(auto& shader : Desc_.Shaders)
+        if(shader->GetShaderType() == type)
+            shaders.push_back(shader);
+
+    return shaders;
+}

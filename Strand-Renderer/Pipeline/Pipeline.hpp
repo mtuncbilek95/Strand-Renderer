@@ -5,12 +5,11 @@
 #include <d3d11.h>
 #include <wrl.h>
 #include <vector>
+#include <Shader/Shader.hpp>
 
 using namespace Microsoft::WRL;
 
 class SamplerState;
-class Shader;
-
 
 struct PipelineDesc
 {
@@ -38,6 +37,7 @@ public:
     ComPtr<ID3D11BlendState>* GetBlendState() { return &BlendState_; }
     ComPtr<ID3D11SamplerState>& GetSamplerState() { return SamplerState_; }
 
+    std::vector<Shader*> GetShader(ShaderType type);
     const PipelineDesc& GetDesc() const { return Desc_; }
 
     DeviceObjectType GetDeviceObjectType() override

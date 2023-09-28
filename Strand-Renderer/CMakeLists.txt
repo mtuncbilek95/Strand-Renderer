@@ -5,6 +5,8 @@ if(CMAKE_BUILD_TYPE MATCHES Debug)
 endif()
 
 add_executable(${PROJECT_NAME} "main.cpp"
+        Containers/Singleton.hpp
+        Containers/UniqueHeap.hpp
         GraphicsDevice/GraphicsDevice.cpp
         GraphicsDevice/GraphicsDevice.hpp
         Window/Window.hpp
@@ -27,6 +29,11 @@ add_executable(${PROJECT_NAME} "main.cpp"
         Application/Application.hpp
         GameTimer/GameTimer.hpp
         GameTimer/GameTimer.cpp
+        World/GameObject/GameObject.cpp
+        World/GameObject/GameObject.hpp
+        World/GraphicsManager/GraphicsManager.cpp
+        World/GraphicsManager/GraphicsManager.hpp
+
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Strand-Renderer")

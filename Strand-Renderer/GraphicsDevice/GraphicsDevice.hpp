@@ -30,7 +30,7 @@ class CommandList;
 class GraphicsDevice
 {
 public:
-    GraphicsDevice(Window* window);
+    GraphicsDevice();
     GraphicsDevice(const GraphicsDevice&) = delete;
     GraphicsDevice& operator=(const GraphicsDevice&) = delete;
     ~GraphicsDevice();
@@ -56,6 +56,7 @@ public:
     ComPtr<ID3D11RenderTargetView>& GetRenderTargetView() { return RenderTargetView_; }
     ComPtr<ID3D11DepthStencilView>& GetDepthStencilView() { return DepthStencilBuffer_; }
 
+    void SetOwnerWindow(Window* window) { Window_ = window; }
     void Present();
 private:
     Window* Window_;

@@ -24,7 +24,6 @@ public:
     void Run();
 private:
     Window* window;
-    GraphicsDevice* graphicsDevice;
 
     Pipeline* basicPipeline;
     GameTimer* timer;
